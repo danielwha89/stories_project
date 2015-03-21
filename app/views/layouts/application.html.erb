@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stories</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+</head>
+
+ <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<body>
+<div id="menu">
+	<ul>
+		<%= image_tag "close-white.svg", class: "closepic" %>
+		<li>Home</li>
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+</div>
+<div id="button">
+	<%= image_tag "menu-white.svg", class: "menupic" %>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
